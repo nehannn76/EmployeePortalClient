@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>EmployeePortalClient</groupId>
+  <artifactId>EmployeePortalClient</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20170109052545</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,23 @@
+<div ng-controller="progress as vm" layout="column" ng-cloak="" class="progressCirculardemoBasicUsage" ng-app="myApp">
+
+  <md-content layout-padding="">
+    
+    <div layout="row" layout-sm="column" layout-align="space-around">
+      <md-progress-circular ng-disabled="!vm.activated" ng-hide="!vm.activated" md-mode="indeterminate"></md-progress-circular>
+    </div>
+    </md-content>
+    <table ng-hide="vm.activated">
+    <tr ng-repeat="x in names">
+      <td>{{ $index + 1 }}</td>
+      <td>{{ x.Name }}</td>
+      <td>{{ x.Country }}</td>
+  </tr>
+  </table>
+
+
+</div>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+-->
