@@ -63,7 +63,7 @@ App.controller('login', ['$scope', '$http', '$state','$rootScope','$interval','$
   
   $http({
   method:'POST',
-  url:'http://server-employeeportal.44fs.preview.openshiftapps.com/login',
+  url:'http://emp-portal-server1.apps-azurestack.amosdemo.io/login',
   data:login,
   header:{'Content-Type':'application/json'}
   }).success(function (data, status, headers, config) {
@@ -128,7 +128,7 @@ var signup={
   
   $http({
   method:'POST',
-  url:'http://server-employeeportal.44fs.preview.openshiftapps.com/registerEmployee',
+  url:'http://emp-portal-server1.apps-azurestack.amosdemo.io/login',
   data:signup,
   header:{'Content-Type':'application/json'}
   }).success(function (data, status, headers, config) {
@@ -185,7 +185,7 @@ App.controller('showemployee', ['$scope', '$http', '$state','$rootScope','$inter
   self.determinateValue = 1;
   $http({
   method:'GET',
-  url:'http://server-employeeportal.44fs.preview.openshiftapps.com/employees',
+  url:'http://emp-portal-server1.apps-azurestack.amosdemo.io/login',
   
   }).success(function (data, status, headers, config) {
       //alert('success!!! Employee Fetched !!!');
@@ -199,7 +199,7 @@ $scope.remove=function(id,index){
 confirm('Do yo Want to DELETE Employee: employee id'+id);
 $http({
   method:'DELETE',
-  url:'http://server-employeeportal.44fs.preview.openshiftapps.com/delete/'+id
+  url:'http://http://emp-portal-server1.apps-azurestack.amosdemo.io/login/delete/'+id
   
   }).success(function (data, status, headers, config) {
         //alert('success!!! Employee Fetched !!!');
@@ -240,7 +240,7 @@ App.controller('EmployeeUpdate', ['$scope', '$http', '$state','$rootScope', func
 var uid=$rootScope.updateId;
 $http({
   method:'GET',
-  url:'http://server-employeeportal.44fs.preview.openshiftapps.com/getEmployeeInfo/'+uid
+  url:'http://emp-portal-server1.apps-azurestack.amosdemo.io/login/getEmployeeInfo/'+uid
   
   }).success(function (data, status, headers, config) {
         alert('success!!! Employee Information Fetched !!!');
@@ -268,7 +268,7 @@ var employeeupdatedata={
 
   $http({
   method:'POST',
-  url:'http://server-employeeportal.44fs.preview.openshiftapps.com/updateEmployee',
+  url:'http://emp-portal-server1.apps-azurestack.amosdemo.io/login/updateEmployee',
   data:employeeupdatedata,
   header:{'Content-Type':'application/json'}
   }).success(function (data, status, headers, config) {
